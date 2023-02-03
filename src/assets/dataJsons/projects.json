@@ -1,0 +1,29 @@
+[
+    {   "key":1,
+        "image":"astroParty.png",
+        "name":"Astro Party Tickets",
+        "description":"NFT ticketing system build on ethereum block chain. Tickets can be bought, sold, mint and cancel based on the requirements",
+        "techStack":"solidity | ERC 721 | Ethereum",
+        "projectLink":"www.project.lk",
+        "fullpageData":[]
+    },
+    {   
+        "key":2,
+        "name":"Streamcast | Netflix Clone",
+        "image":"projectStreamCast.png",
+        "description":"React based Front end application for video streaming. This applications is deployed on firebase.",
+        "techStack":"React | html | css | react compount component | firebase",
+        "projectLink":"www.project.lk",
+        "fullpageData":[]
+    },
+    {   
+        "key":3,
+        "name":"Streamcast | Netflix Clone",
+        "image":"projectStreamCast.png",
+        "description":"React based Front end application for video streaming. This applications is deployed on firebase.",
+        "techStack":"React | html | css | react compount component | firebase",
+        "projectLink":"www.project.lk",
+        "fullpageData":[]
+    }
+
+]

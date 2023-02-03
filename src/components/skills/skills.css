@@ -1,0 +1,196 @@
+.SkillsWrapper{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.SkillsHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+}
+.SkillsWaterMark{
+    color: rgba(0, 0, 0, 0.02);
+    position: absolute;
+    font-size: 6em;
+    z-index: 2;
+    margin-top: 0;
+    transform: translateY(-20px);
+}
+.SkillsHeading>h1{
+    color: var(--accent-colour-1);
+    
+}
+.SKills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+
+}
+
+.Skill{
+    width: 30%;
+    margin-top: 2rem;
+    
+}
+.SkillImage{
+    flex: 0.2;
+}
+.SkillDetail{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+
+}
+.SkillImage>img{
+    width: 100%;
+}
+.SkillTitle{
+    color: var(--accent-colour-1);
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.SKillTools>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    justify-content: start;
+    font-family: 'Hind Madurai', sans-serif;
+    width: 100;
+    
+}
+.OtherSkills{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 1rem 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,40);
+    background: linear-gradient(90deg, rgb(3, 0, 61) 21%, rgba(121,9,113,1) 100%);
+    margin: 4rem -6rem 2rem -6rem;
+    font-family: 'Hind Madurai', sans-serif;
+  
+}
+.OtherSkillsText{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1em;
+    flex: 0.8;
+}
+.OtherSkillsImage{
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OtherSkillsImage>img{
+    width: 80%;
+
+}
+.tool{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    
+}
+.tool>p{
+    flex: 0.4;
+    font-weight: 100;
+}
+.tool>div{
+    flex: 0.6;
+    
+}
+.skillLevel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skillLevel>div{
+    /* background-color: rgb(132, 132, 132); */
+     height: 5px;
+    border-radius: 5px;
+    
+}
+.skillLevel>p{
+    font-size: 0.8em;
+    color: rgb(0,0,0,0.6);
+}
+
+
+
+@media(max-width:800px){
+
+    .SkillsHeading{
+        padding-left: 1rem;
+    }
+    .SkillsHeading>h2{
+        font-size: 1em;
+    }
+    .Skill{
+        width: 100%;
+        padding: 0;
+    }
+    .SkillDetail{
+        padding: 0;
+
+    }
+    .SkillTitle{
+        font-size: 1em;
+    }
+    .SKillTools>div{
+        font-size: 1em;
+    }
+    .SKills{
+        padding-left: 1rem;
+    }
+
+    .OtherSkills{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        width: 100hw;
+        margin: 2rem 0;
+        
+    }
+    .OtherSkillsText{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.8em;
+        width: 100%;
+        transform: translateY(-20%);
+    }
+    .OtherSkillsImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-30%);
+        
+    }
+    .OtherSkillsImage>img{
+        width: 30%;
+      
+    }
+  }

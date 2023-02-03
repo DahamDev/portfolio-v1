@@ -1,0 +1,42 @@
+.workHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.workHeader>img{
+    width: 60px;
+    border-radius: 50%;
+}
+.workHeader>h1{
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+}
+.workEntries>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.experienceSummery{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1em;
+
+}
+.expandExperience{
+    color: rgb(255, 153, 0);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.8em;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.workDetails{
+    
+}

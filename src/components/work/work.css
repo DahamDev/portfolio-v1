@@ -1,0 +1,59 @@
+.WorkWrapper{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+.WorkHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+}
+.WorkWaterMark{
+    color: rgb(0, 0, 0, 0.02);
+    position: absolute;
+    font-size: 6em;
+    z-index: 2;
+    margin-top: 0;
+    transform: translateY(-20px);
+}
+.WorkHeading>h1{
+    color: var(--accent-colour-1);
+}
+.WorkHeading>h2{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.workBody{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+@media (max-width:800px) {
+
+    .WorkWaterMark{
+        font-size: 2em;
+        transform: translateY(-10px);
+        padding: 1rem;
+    }
+    .WorkHeading{
+        padding-left: 1rem;
+    }
+    .WorkHeading>h1{
+        font-size: 1em;
+
+    }
+    .WorkHeading>h2{
+        font-size: 1em;
+    }
+    .WorkWrapper{
+        padding: 1rem;
+    }
+    
+}

@@ -1,0 +1,185 @@
+.Hero{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-bg-color-black);
+}
+
+.Left{
+    flex: 0.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+
+}
+.Left>:nth-child(1){
+    color: var(--main-font-colour);
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Lora', serif;
+    
+
+}
+
+.Left>:nth-child(2){
+    color: var(--accent-colour-1);
+    font-size: 4em;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Left>:nth-child(3){
+    color: var(--main-font-colour);
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Lora', serif;
+}
+.Left>:nth-child(4){
+    color: var(--main-font-colour);
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.Right{
+    flex: 0.3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ProfileImage{
+    width: 70%;
+}
+.HeroButtons{
+    display: flex;
+    gap: 1rem;
+}
+.HeroButtons>:nth-child(2){
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: var(--accent-colour-1);
+    border: solid 1px rgb(5,0,98);
+    transition: 0.2s;
+    cursor: pointer;
+    background: rgb(5,0,98);
+background: linear-gradient(90deg, rgba(5,0,98,1) 0%, rgb(84, 9, 121) 100%);
+}
+
+.HeroButtons>:nth-child(1){
+    color: var(--accent-colour-1);
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: solid 1px var(--accent-colour-1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.HeroButtons>button:hover{
+    padding: 1rem 3rem;
+}
+
+
+.SkillImages{
+  padding: 1rem 1rem 1rem 3rem;
+}
+.SkillImages>img{
+  width: 50%;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s  ease-in-out;
+  display: inline-block;
+      font-size: 190px;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  @media(max-width:800px){
+    .Hero{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+      
+    }
+    .Left{
+      align-items: center;
+    }
+
+    .Left>:nth-child(2){
+      font-size: 3em;
+    }
+
+    .Left>:nth-child(1){
+      font-size: 2em;
+    }
+
+    .ProfileImage{
+      width: 20%;
+    }
+
+  }
